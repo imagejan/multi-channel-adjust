@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>22.1.0</version>
+	</parent>
+
+	<groupId>ch.fmi</groupId>
+	<artifactId>multi-channel-adjust</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<name>Multi-Channel Adjustment</name>
+	<description>An ImageJ command to adjust display of multi-channel images</description>
+	<url>N/A</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>FMI Basel</name>
+		<url>https://github.com/fmi-faim</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>imagejan</id>
+			<name>Jan Eglinger</name>
+			<url>https://imagej.net/User:Eglinger</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagejan/multi-channel-adjust</connection>
+		<developerConnection>scm:git:git@github.com:imagejan/multi-channel-adjust</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagejan/multi-channel-adjust</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagejan/multi-channel-adjust/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>ch.fmi</package-name>
+		<main-class>ch.fmi.MultiChannelAdjuster</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>FMI Basel.</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+	</dependencies>
+</project>
